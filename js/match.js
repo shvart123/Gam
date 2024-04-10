@@ -169,6 +169,7 @@ interval = setInterval(updateTime, 1000);
             // ели нет ходов получаем game over
             if (moves.length <= 0) {
                 gameover = true;
+                score2=0;
             }
             
             // автоигра
@@ -588,6 +589,7 @@ interval = setInterval(updateTime, 1000);
       
         // Reset score
         score = 0;
+        score2=600;
         levels=1;
        timer();
   
@@ -994,6 +996,7 @@ interval = setInterval(updateTime, 1000);
                   seconds=0;
                    // Новая игра
                     newGame();
+                    nextlevels=false;
                 } else if (i == 1) {
                     // Показать ходы
                     showmoves = !showmoves;
